@@ -53,23 +53,23 @@
             margin-top: 40px;
         }
 
-        .benefits {
+        .benefits, .bonus, .faq {
             display: flex;
             justify-content: space-around;
             text-align: center;
             margin: 40px 0;
         }
 
-        .benefit {
+        .benefit, .faq-item {
             width: 30%;
         }
 
-        .benefit img {
+        .benefit img, .faq-item img {
             max-width: 100px;
             margin-bottom: 20px;
         }
 
-        .benefit p {
+        .benefit p, .faq-item p {
             font-size: 1.2em;
             color: #555;
         }
@@ -82,9 +82,24 @@
             text-align: center;
         }
 
+        .testimonial img {
+            max-width: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
         .testimonial p {
             font-style: italic;
             color: #666;
+        }
+
+        .faq {
+            flex-direction: column;
+            margin-top: 40px;
+        }
+
+        .faq-item {
+            margin-bottom: 30px;
         }
 
         footer {
@@ -97,11 +112,11 @@
 
         /* Estilos responsivos */
         @media (max-width: 768px) {
-            .benefits {
+            .benefits, .bonus {
                 flex-direction: column;
             }
 
-            .benefit {
+            .benefit, .faq-item {
                 width: 100%;
                 margin-bottom: 20px;
             }
@@ -120,6 +135,12 @@
         <p>Transforme as noites do seu filho com facilidade</p>
         <a href="https://pay.kiwify.com.br/8cKD8Mx" class="btn-header">Compre Agora</a>
     </header>
+
+    <!-- Seção de Introdução ao Método -->
+    <div class="container">
+        <h2>Sobre o Método</h2>
+        <p>O método Bebê Dorminhoco em 7 Dias foi criado para ajudar pais e mães a estabelecerem uma rotina saudável de sono para seus bebês. Com técnicas simples e eficazes, este guia oferece uma solução prática e rápida para transformar as noites em família.</p>
+    </div>
 
     <!-- Seção de Benefícios -->
     <div class="container">
@@ -140,11 +161,51 @@
         </div>
     </div>
 
+    <!-- Seção de Bônus -->
+    <div class="container">
+        <h2>Bônus Exclusivos</h2>
+        <div class="bonus">
+            <div class="benefit">
+                <img src="https://example.com/planilha.png" alt="Planilhas">
+                <p>Planilhas personalizadas para acompanhar o progresso do sono</p>
+            </div>
+            <div class="benefit">
+                <img src="https://example.com/graficos.png" alt="Gráficos">
+                <p>Gráficos detalhados para medir a evolução do sono do bebê</p>
+            </div>
+            <div class="benefit">
+                <img src="https://example.com/video.png" alt="Vídeos">
+                <p>Acesso a vídeos exclusivos com técnicas de relaxamento</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Seção de Depoimentos -->
     <div class="testimonial">
         <h2>O Que Outros Pais Dizem</h2>
+        <img src="https://example.com/foto-maria.jpg" alt="Maria">
         <p>"Com apenas 3 dias aplicando as técnicas, meu bebê passou a dormir a noite toda! Este livro foi um divisor de águas para nossa família." - Maria</p>
+        <img src="https://example.com/foto-joao.jpg" alt="João">
         <p>"Esse livro transformou nossas noites em apenas uma semana! Recomendo a todos os pais." - João</p>
+    </div>
+
+    <!-- Seção de Perguntas Frequentes (FAQ) -->
+    <div class="container">
+        <h2>Perguntas Frequentes</h2>
+        <div class="faq">
+            <div class="faq-item">
+                <h3>1. Quanto tempo levará para ver os resultados?</h3>
+                <p>A maioria dos pais vê uma melhora significativa no sono do bebê em 3 a 7 dias.</p>
+            </div>
+            <div class="faq-item">
+                <h3>2. Este método funciona para bebês de qualquer idade?</h3>
+                <p>Sim, o método é eficaz para bebês de várias idades, mas quanto mais cedo começar, melhor.</p>
+            </div>
+            <div class="faq-item">
+                <h3>3. E se o método não funcionar para mim?</h3>
+                <p>Oferecemos uma garantia de satisfação de 30 dias. Se não estiver satisfeito, devolvemos seu dinheiro.</p>
+            </div>
+        </div>
     </div>
 
     <!-- Seção de Chamada para Ação Final -->
