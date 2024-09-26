@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bebê Dorminhoco em 7 Dias</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Se tiver um arquivo CSS -->
     <style>
-        /* Estilos básicos direto no HTML */
+        /* Estilos básicos */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -15,10 +14,30 @@
         }
 
         header {
-            background-color: #007bff;
+            background: url('https://example.com/sua-imagem-de-fundo.jpg') no-repeat center center/cover;
             color: white;
-            padding: 20px;
             text-align: center;
+            padding: 100px 20px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .btn-header {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
         }
 
         .container {
@@ -27,100 +46,114 @@
             padding: 20px;
         }
 
-        h1 {
+        h2 {
             color: #333;
             text-align: center;
-            font-size: 2.5em; /* Tamanho do texto mais adequado para telas maiores */
+            font-size: 2.5em;
+            margin-top: 40px;
         }
 
-        p {
-            font-size: 18px;
-            line-height: 1.6;
+        .benefits {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .benefit {
+            width: 30%;
+        }
+
+        .benefit img {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .benefit p {
+            font-size: 1.2em;
             color: #555;
+        }
+
+        .testimonial {
+            background-color: #f9f9f9;
+            padding: 40px 20px;
+            margin: 40px 0;
+            border-radius: 10px;
             text-align: center;
         }
 
-        .btn {
-            display: inline-block;
-            background-color: #28a745;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 20px auto;
-            display: block;
-            width: 200px;
+        .testimonial p {
+            font-style: italic;
+            color: #666;
         }
 
         footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px;
-            position: relative;
-            width: 100%;
+            padding: 20px;
             margin-top: 40px;
         }
 
-        /* Estilos responsivos para dispositivos móveis */
+        /* Estilos responsivos */
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2em; /* Tamanho menor para telas pequenas */
+            .benefits {
+                flex-direction: column;
             }
 
-            p {
-                font-size: 16px; /* Ajuste no tamanho da fonte */
+            .benefit {
+                width: 100%;
+                margin-bottom: 20px;
             }
 
-            .btn {
-                width: 100%; /* Botão ocupa toda a largura da tela */
-                max-width: 300px; /* Mas com limite de largura */
-            }
-
-            header, footer {
-                padding: 15px;
-            }
-
-            .container {
-                padding: 15px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 1.8em; /* Tamanho ainda menor para smartphones */
-            }
-
-            p {
-                font-size: 14px; /* Texto menor para caber melhor */
-            }
-
-            .btn {
-                padding: 12px; /* Botão mais compacto */
-                max-width: 250px; /* Limite para evitar que ocupe toda a tela */
-            }
-
-            header, footer {
-                padding: 10px;
+            header {
+                padding: 60px 20px;
             }
         }
     </style>
 </head>
 <body>
 
+    <!-- Cabeçalho com Imagem de Fundo -->
     <header>
         <h1>Bebê Dorminhoco em 7 Dias</h1>
         <p>Transforme as noites do seu filho com facilidade</p>
+        <a href="https://pay.kiwify.com.br/8cKD8Mx" class="btn-header">Compre Agora</a>
     </header>
 
+    <!-- Seção de Benefícios -->
     <div class="container">
-        <h1>Bem-vindo ao Guia Definitivo de Sono Infantil</h1>
-        <p>Descubra como melhorar o sono do seu bebê em apenas 7 dias, com técnicas simples e eficazes. Nossa abordagem é baseada em pesquisas científicas e em histórias reais de pais que conseguiram transformar as noites com este método.</p>
-        
-        <a href="https://pay.kiwify.com.br/8cKD8Mx" class="btn">Compre Agora</a>
+        <h2>Por Que Escolher Este Livro?</h2>
+        <div class="benefits">
+            <div class="benefit">
+                <img src="https://example.com/icone1.png" alt="Ícone 1">
+                <p>Resolva o problema do sono em apenas 7 dias</p>
+            </div>
+            <div class="benefit">
+                <img src="https://example.com/icone2.png" alt="Ícone 2">
+                <p>Baseado em pesquisas científicas e histórias reais</p>
+            </div>
+            <div class="benefit">
+                <img src="https://example.com/icone3.png" alt="Ícone 3">
+                <p>Inclui recursos extras como planilhas e gráficos</p>
+            </div>
+        </div>
     </div>
 
+    <!-- Seção de Depoimentos -->
+    <div class="testimonial">
+        <h2>O Que Outros Pais Dizem</h2>
+        <p>"Com apenas 3 dias aplicando as técnicas, meu bebê passou a dormir a noite toda! Este livro foi um divisor de águas para nossa família." - Maria</p>
+        <p>"Esse livro transformou nossas noites em apenas uma semana! Recomendo a todos os pais." - João</p>
+    </div>
+
+    <!-- Seção de Chamada para Ação Final -->
+    <div class="container" style="text-align:center;">
+        <h2>Pronto para transformar suas noites?</h2>
+        <a href="https://pay.kiwify.com.br/8cKD8Mx" class="btn-header">Compre Agora</a>
+    </div>
+
+    <!-- Rodapé -->
     <footer>
         <p>&copy; 2024 Bebê Dorminhoco. Todos os direitos reservados.</p>
     </footer>
