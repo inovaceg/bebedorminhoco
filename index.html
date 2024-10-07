@@ -1,223 +1,175 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bebê Dorminhoco em 7 Dias</title>
     <style>
-        /* Estilos básicos */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #F9F5F0;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            color: #444;
         }
 
+        /* Cabeçalho */
         header {
-            background: url('https://example.com/sua-imagem-de-fundo.jpg') no-repeat center center/cover;
-            color: white;
+            background-color: #A1D6E2;
+            padding: 40px 20px;
             text-align: center;
-            padding: 100px 20px;
+            color: #fff;
+            font-size: 28px;
         }
 
         header h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
+            font-size: 36px;
+            margin: 0;
         }
 
-        header p {
-            font-size: 1.5em;
+        /* Seção Principal */
+        .main {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .main h2 {
+            font-size: 28px;
+            color: #FA8072;
             margin-bottom: 20px;
         }
 
-        .btn-header {
-            background-color: #28a745;
-            color: white;
-            padding: 15px 30px;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        h2 {
-            color: #333;
-            text-align: center;
-            font-size: 2.5em;
-            margin-top: 40px;
-        }
-
-        .benefits, .bonus, .faq {
-            display: flex;
-            justify-content: space-around;
-            text-align: center;
-            margin: 40px 0;
-        }
-
-        .benefit, .faq-item {
-            width: 30%;
-        }
-
-        .benefit img, .faq-item img {
-            max-width: 100px;
-            margin-bottom: 20px;
-        }
-
-        .benefit p, .faq-item p {
-            font-size: 1.2em;
+        .main p {
+            font-size: 18px;
+            margin-bottom: 30px;
             color: #555;
         }
 
-        .testimonial {
-            background-color: #f9f9f9;
+        /* Botão de compra */
+        .cta-button {
+            background-color: #FFD700;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #FFC107;
+        }
+
+        /* Seção de Benefícios */
+        .benefits {
+            background-color: #FFEFD5;
             padding: 40px 20px;
-            margin: 40px 0;
-            border-radius: 10px;
             text-align: center;
         }
 
-        .testimonial img {
-            max-width: 100px;
-            border-radius: 50%;
-            margin-bottom: 10px;
+        .benefits h3 {
+            color: #FA8072;
+            font-size: 24px;
+            margin-bottom: 20px;
         }
 
-        .testimonial p {
-            font-style: italic;
+        .benefits ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .benefits ul li {
+            font-size: 18px;
             color: #666;
+            padding: 10px 0;
         }
 
-        .faq {
-            flex-direction: column;
-            margin-top: 40px;
+        .benefits ul li:before {
+            content: "✓";
+            color: #FA8072;
+            font-size: 20px;
+            margin-right: 10px;
         }
 
-        .faq-item {
+        /* Seção de Depoimentos */
+        .testimonials {
+            padding: 40px 20px;
+            background-color: #FDF5E6;
+        }
+
+        .testimonials h3 {
+            color: #FA8072;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .testimonial {
+            font-style: italic;
+            color: #555;
+            font-size: 18px;
             margin-bottom: 30px;
         }
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
+        .testimonial span {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #333;
         }
 
-        /* Estilos responsivos */
-        @media (max-width: 768px) {
-            .benefits, .bonus {
-                flex-direction: column;
-            }
+        /* Rodapé */
+        footer {
+            background-color: #A1D6E2;
+            padding: 20px 0;
+            text-align: center;
+            color: #fff;
+        }
 
-            .benefit, .faq-item {
-                width: 100%;
-                margin-bottom: 20px;
-            }
-
-            header {
-                padding: 60px 20px;
-            }
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
 
-    <!-- Cabeçalho com Imagem de Fundo -->
-    <header>
-        <h1>Bebê Dorminhoco em 7 Dias</h1>
-        <p>Transforme as noites do seu filho com facilidade</p>
-        <a href="https://pay.kiwify.com.br/8cKD8Mx" class="btn-header">Compre Agora</a>
-    </header>
+<header>
+    <h1>Bebê Dorminhoco em 7 Dias</h1>
+    <p>Transforme as Noites do Seu Filho com Facilidade</p>
+</header>
 
-    <!-- Seção de Introdução ao Método -->
-    <div class="container">
-        <h2>Sobre o Método</h2>
-        <p>O método Bebê Dorminhoco em 7 Dias foi criado para ajudar pais e mães a estabelecerem uma rotina saudável de sono para seus bebês. Com técnicas simples e eficazes, este guia oferece uma solução prática e rápida para transformar as noites em família.</p>
-    </div>
+<div class="main">
+    <h2>Recupere Suas Noites de Sono em Apenas 7 Dias!</h2>
+    <p>Descubra como você pode garantir um sono tranquilo e saudável para o seu bebê sem técnicas extremas. Nosso eBook vai te guiar passo a passo.</p>
+    <a href="https://pay.kiwify.com.br/8cKD8Mx" class="cta-button">Compre Agora</a>
+</div>
 
-    <!-- Seção de Benefícios -->
-    <div class="container">
-        <h2>Por Que Escolher Este Livro?</h2>
-        <div class="benefits">
-            <div class="benefit">
-                <img src="https://example.com/icone1.png" alt="Ícone 1">
-                <p>Resolva o problema do sono em apenas 7 dias</p>
-            </div>
-            <div class="benefit">
-                <img src="https://example.com/icone2.png" alt="Ícone 2">
-                <p>Baseado em pesquisas científicas e histórias reais</p>
-            </div>
-            <div class="benefit">
-                <img src="https://example.com/icone3.png" alt="Ícone 3">
-                <p>Inclui recursos extras como planilhas e gráficos</p>
-            </div>
-        </div>
-    </div>
+<div class="benefits">
+    <h3>Por que escolher o Bebê Dorminhoco em 7 Dias?</h3>
+    <ul>
+        <li>Sono tranquilo em apenas 7 dias</li>
+        <li>Técnicas simples e práticas</li>
+        <li>Garantia de resultados sem choro excessivo</li>
+        <li>Planilhas e guias bônus exclusivos</li>
+        <li>Histórias reais de sucesso de outras famílias</li>
+    </ul>
+</div>
 
-    <!-- Seção de Bônus -->
-    <div class="container">
-        <h2>Bônus Exclusivos</h2>
-        <div class="bonus">
-            <div class="benefit">
-                <img src="https://example.com/planilha.png" alt="Planilhas">
-                <p>Planilhas personalizadas para acompanhar o progresso do sono</p>
-            </div>
-            <div class="benefit">
-                <img src="https://example.com/graficos.png" alt="Gráficos">
-                <p>Gráficos detalhados para medir a evolução do sono do bebê</p>
-            </div>
-            <div class="benefit">
-                <img src="https://example.com/video.png" alt="Vídeos">
-                <p>Acesso a vídeos exclusivos com técnicas de relaxamento</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Seção de Depoimentos -->
+<div class="testimonials">
+    <h3>O que os pais estão dizendo?</h3>
     <div class="testimonial">
-        <h2>O Que Outros Pais Dizem</h2>
-        <img src="https://example.com/foto-maria.jpg" alt="Maria">
-        <p>"Com apenas 3 dias aplicando as técnicas, meu bebê passou a dormir a noite toda! Este livro foi um divisor de águas para nossa família." - Maria</p>
-        <img src="https://example.com/foto-joao.jpg" alt="João">
-        <p>"Esse livro transformou nossas noites em apenas uma semana! Recomendo a todos os pais." - João</p>
+        "Eu não acreditava que seria possível, mas em menos de uma semana meu bebê já estava dormindo a noite inteira! Esse livro mudou nossas vidas."
+        <span>— Ana Maria, mãe do Lucas</span>
     </div>
-
-    <!-- Seção de Perguntas Frequentes (FAQ) -->
-    <div class="container">
-        <h2>Perguntas Frequentes</h2>
-        <div class="faq">
-            <div class="faq-item">
-                <h3>1. Quanto tempo levará para ver os resultados?</h3>
-                <p>A maioria dos pais vê uma melhora significativa no sono do bebê em 3 a 7 dias.</p>
-            </div>
-            <div class="faq-item">
-                <h3>2. Este método funciona para bebês de qualquer idade?</h3>
-                <p>Sim, o método é eficaz para bebês de várias idades, mas quanto mais cedo começar, melhor.</p>
-            </div>
-            <div class="faq-item">
-                <h3>3. E se o método não funcionar para mim?</h3>
-                <p>Oferecemos uma garantia de satisfação de 30 dias. Se não estiver satisfeito, devolvemos seu dinheiro.</p>
-            </div>
-        </div>
+    <div class="testimonial">
+        "Se eu soubesse que seria tão fácil, teria comprado antes. Agora dormimos tranquilos e nosso bebê acorda feliz."
+        <span>— Júlia, mãe da Sofia</span>
     </div>
+</div>
 
-    <!-- Seção de Chamada para Ação Final -->
-    <div class="container" style="text-align:center;">
-        <h2>Pronto para transformar suas noites?</h2>
-        <a href="https://pay.kiwify.com.br/8cKD8Mx" class="btn-header">Compre Agora</a>
-    </div>
-
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2024 Bebê Dorminhoco. Todos os direitos reservados.</p>
-    </footer>
+<footer>
+    <p>&copy; 2024 Bebê Dorminhoco em 7 Dias. Todos os direitos reservados.</p>
+</footer>
 
 </body>
 </html>
